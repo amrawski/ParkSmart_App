@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ParkSmart</string>
+    <string name="TODO">TODO</string>
+    <string name="logo">logoBanner</string>
+    <string name="lot_1">Lot 1</string>
+    <string name="pec_lot">PEC Lot</string>
+    <string name="a_lot">A Lot</string>
+    <string name="b_lot">B Lot</string>
+</resources>
