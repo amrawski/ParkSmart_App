@@ -17,7 +17,7 @@
             android:shadowColor="#ba000000"
             android:shadowDx="1"
             android:shadowRadius="20"
-            android:text="@string/pec_lot"
+            android:text="@string/d_lot"
             android:textAllCaps="false"
             android:textColor="#ffcb05"
             android:textSize="36sp"

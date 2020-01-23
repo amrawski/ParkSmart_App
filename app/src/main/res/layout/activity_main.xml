@@ -13,10 +13,10 @@
 
 
         <Button
-            android:id="@+id/pecLot"
+            android:id="@+id/dLot"
             android:layout_width="169dp"
             android:layout_height="51dp"
-            android:text="@string/pec_lot"
+            android:text="@string/d_lot"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
             android:id="@+id/cLot"
             android:layout_width="169dp"
             android:layout_height="51dp"
-            android:text="C Lot"
+            android:text="@string/c_lot"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
