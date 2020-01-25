@@ -25,32 +25,31 @@
 17-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity
-21-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:12:9-14:61
-22            android:name="Park.Smart.LotNumber1"
-22-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:13:13-49
-23            android:screenOrientation="portrait" />
-23-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:14:13-49
-24        <activity
-24-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:15:9-23:20
-25            android:name="Park.Smart.MainActivity"
-25-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:16:13-51
-26            android:screenOrientation="portrait" >
-26-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:17:13-49
-27            <intent-filter>
-27-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:18:13-22:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:19:17-69
-28-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:19:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:21:17-77
-30-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:21:27-74
-31            </intent-filter>
-32        </activity>
-33    </application>
-34
-35</manifest>
+19        android:theme="@style/AppTheme" >
+19-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:11:9-40
+20        <activity
+20-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:12:9-14:61
+21            android:name="Park.Smart.LotNumber1"
+21-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:13:13-49
+22            android:screenOrientation="portrait" />
+22-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:14:13-49
+23        <activity
+23-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:15:9-23:20
+24            android:name="Park.Smart.MainActivity"
+24-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:16:13-51
+25            android:screenOrientation="portrait" >
+25-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:17:13-49
+26            <intent-filter>
+26-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:18:13-22:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:19:17-69
+27-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:19:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:21:17-77
+29-->C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:21:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>
