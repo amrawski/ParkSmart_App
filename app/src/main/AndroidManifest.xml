@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="Park.Smart.LotNumber1"
+            android:name="Park.Smart.LotD"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="Park.Smart.MainActivity"

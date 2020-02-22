@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button lotOne;
+    private TextView helloTextView;
 
+    //Set button to wait for a user to press a button to select a specific lot
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
                 openlotOne();
             }
         });
+        helloTextView = findViewById(R.id.text_view_id);
+        helloTextView.setText(R.string.user_greeting);
     }
 
     public void openlotOne() {
-        Intent intent = new Intent(this, LotNumber1.class);
+        Intent intent = new Intent(this, LotD.class);
         startActivity(intent);
     }
 }

@@ -15,30 +15,51 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import static Park.Smart.R.string.user_greeting;
+
 public class MainActivity extends AppCompatActivity {
-    private Button lotOne;
-//Set button to wait for a user to press a button to select a specific lot
+    private Button lotD;
+    private Button lotA;
+    private TextView helloTextView;
+
+    //Set button to wait for a user to press a button to select a specific lot
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        lotOne = findViewById(R.id.dLot);
-        lotOne.setOnClickListener(new View.OnClickListener() {
+        lotD = findViewById(R.id.dLot);
+        lotA = findViewById(R.id.aLot);
+        lotD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openlotOne();
+                openlotD();
+            }
+        });
+        lotA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setuserGreeting();
             }
         });
     }
+
+
     //When user presses the button to go to a specific lot navigate to that page
-    public void openlotOne() {
-        Intent intent = new Intent(this, LotNumber1.class);
+    public void openlotD() {
+        Intent intent = new Intent(this, LotD.class);
         startActivity(intent);
     }
-}
+    public void setuserGreeting() {
+        helloTextView = findViewById(R.id.text_view_id);
+        CharSequence a = helloTextView.getText();
+        helloTextView.setText(user_greeting);
+    }
+    }
+
 /*<!--       _
         .__(.)< (MEOW)
         \___)

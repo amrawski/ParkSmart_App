@@ -78,12 +78,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\xx
 		ADDED from C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:11:9-40
-activity#Park.Smart.LotNumber1
+activity#Park.Smart.LotD
 ADDED from C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:12:9-14:61
 	android:screenOrientation
 		ADDED from C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:14:13-49
 	android:name
-		ADDED from C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:13:13-49
+		ADDED from C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:13:13-43
 activity#Park.Smart.MainActivity
 ADDED from C:\Users\xxusm\Documents\ParkSmart\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:screenOrientation

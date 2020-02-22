@@ -8,4 +8,8 @@
     <string name="b_lot">B Lot</string>
     <string name="d_lot">D Lot</string>
     <string name="c_lot">C Lot</string>
+    <string name="hello">hello</string>
+    <string name="user_greeting">Hello(:</string>
+    <string name="user_bad">hi</string>
+    <string name="parkSpotLD">parkSpotLD</string>
 </resources>

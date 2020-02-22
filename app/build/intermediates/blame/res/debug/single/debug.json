@@ -248,12 +248,12 @@
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -464,12 +464,12 @@
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
-        "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
+        "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -824,6 +824,10 @@
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable_vparkspotindicator.xml.flat",
+        "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\drawable\\vparkspotindicator.xml"
+    },
+    {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_action_menu_layout.xml"
     },
@@ -1088,6 +1092,10 @@
         "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable_imglotd.png.flat",
+        "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\drawable\\imglotd.png"
+    },
+    {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
@@ -1200,6 +1208,10 @@
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lot_d.xml.flat",
+        "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\layout\\activity_lot_d.xml"
+    },
+    {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
@@ -1266,10 +1278,6 @@
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\anim\\design_bottom_sheet_slide_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable_spaceindicator.xml.flat",
-        "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\drawable\\spaceindicator.xml"
     },
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1438,6 +1446,10 @@
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout-v26\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable_parkspotindicator.xml.flat",
+        "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\drawable\\parkspotindicator.xml"
     },
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
@@ -1998,10 +2010,6 @@
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
         "source": "C:\\Users\\xxusm\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_btn_colored_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_lot_number1.xml.flat",
-        "source": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\src\\main\\res\\layout\\activity_lot_number1.xml"
     },
     {
         "merged": "C:\\Users\\xxusm\\Documents\\ParkSmart\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
