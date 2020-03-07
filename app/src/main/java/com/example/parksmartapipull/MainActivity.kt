@@ -7,6 +7,7 @@ import android.widget.TextView
 import com.android.volley.toolbox.Volley
 import com.android.volley.Request
 import com.android.volley.Response
+import com.android.volley.VolleyError
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
 import org.json.JSONArray
@@ -22,9 +23,12 @@ class MainActivity : AppCompatActivity() {
         val outputView = findViewById<TextView>(R.id.test)
 
         //form request using API call
-        ParkSmartServer.pull("Lot_D", Response.Listener { response ->
+        var server = ParkSmartServer(this)
+        server.pull("Lot_D", Response.Listener { response ->
             //display the response from the request
-            outputView.text = "Response is: ${response.toString()}"
+            outputView.text = "(kotlin) Response is: ${response.toString()}"
+        }, Response.ErrorListener { error: VolleyError ->
+            outputView.text = "(kotlin) HTTP request encountered Error: ${error.message}"
         })
     }
 
