@@ -21,22 +21,11 @@ class MainActivity : AppCompatActivity() {
         // get handle for the output view where the response should be displayed
         val outputView = findViewById<TextView>(R.id.test)
 
-        //Instantiate the RequestQueue
-        val queue = Volley.newRequestQueue(this)
-        val url = "http://lamp.engin.umd.umich.edu/~bbrauchl/api/pull.php"
-
-        val requestJSON = JSONObject()
-
-        requestJSON.put("Lot", "Lot_D")
-
-        //form request
-        val parksmartRequest = JsonObjectRequest(Request.Method.POST, url, requestJSON, Response.Listener { response ->
+        //form request using API call
+        ParkSmartServer.pull("Lot_D", Response.Listener { response ->
             //display the response from the request
             outputView.text = "Response is: ${response.toString()}"
-        }, Response.ErrorListener {
-            outputView.text = "Error!"
         })
-        queue.add(parksmartRequest)
     }
 
 }
