@@ -57,8 +57,9 @@ private View a;
         try {
             Group group = findViewById(R.id.ldGroup);//bind view from xml
             int[] lotGroup = group.getReferencedIds();
-           int arrLength = lotGroup.length;
-           for(int i=0; i<arrLength; i++){
+           int arrLength = lotGroup.length;// get number of spaces in lot
+           //set all spaces to green showing them being open
+            for(int i=0; i<arrLength; i++){
               int viewId = lotGroup[i];
               spot = findViewById(viewId);
               spot.setBackgroundColor(getResources().getColor(R.color.openspot));
@@ -72,14 +73,17 @@ private View a;
 
 
     }
-
+//service to change spaces to red/filled
+    /*
+    ADD CODE IN THIS SERVICE TO CHANGE THEM TOO RED.
+     */
     public void spotFilled(){
 
         try {
             Group group = findViewById(R.id.ldGroup);//bind view from xml
             int[] lotGroup = group.getReferencedIds();
             int arrLength = lotGroup.length;
-            for(int i=0; i<arrLength; i++){
+            for(int i=40; i<arrLength; i++){
                 int viewId = lotGroup[i];
                 spot = findViewById(viewId);
                 spot.setBackgroundColor(getResources().getColor(R.color.takenspot));
