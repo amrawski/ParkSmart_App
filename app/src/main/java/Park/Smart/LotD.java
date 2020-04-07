@@ -10,6 +10,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.Group;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,21 +81,71 @@ private View a;
 
     public void spotFilled(){
 
-        try {
-            Group group = findViewById(R.id.ldGroup);//bind view from xml
-            int[] lotGroup = group.getReferencedIds();
-            int arrLength = lotGroup.length;
-            for(int i=0; i<arrLength; i++){
-                int viewId = lotGroup[i];
-                spot = findViewById(viewId);
-                spot.setBackgroundColor(getResources().getColor(R.color.takenspot));
+        ParkSmartServer server = new ParkSmartServer(this);
+        server.pull("Lot_D", new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+
+                try {
+                    JSONArray spaces = response.getJSONArray("Lot_D");
+
+                    Group group = findViewById(R.id.ldGroup);//bind view from xml
+                    int[] lotGroup = group.getReferencedIds();
+                    int arrLength = lotGroup.length;
+                    for(int i=0; i < arrLength; i++){
+
+                        int viewId = lotGroup[i];
+                        spot = findViewById(viewId);
+
+                        spot.setBackgroundColor(getResources().getColor(R.color.unknownspot));
+                    }
+
+                    for(int i=0; i < spaces.length(); i++) {
+                        JSONObject space = spaces.getJSONObject(i);
+                        spot = findViewById(space.getInt("Space"));
+
+                        if (space.getBoolean("IsOccupied")) {
+                            spot.setBackgroundColor(getResources().getColor(R.color.takenspot));
+                        }
+                        else {
+                            spot.setBackgroundColor(getResources().getColor(R.color.openspot));
+                        }
+                    }
+                } catch (Exception e) {
+
+                    e.printStackTrace();
+
+                }
             }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                String output = "(java) HTTP request encountered Error: " + error.getMessage();
+                /* PUT CODE HERE FOR IF THE HTTP REQUEST FAILS
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                */
+            }
+        });
 
-        } catch (Exception e) {
 
-            e.printStackTrace();
 
-        }
+
     }
         public void spotOpen(){
 

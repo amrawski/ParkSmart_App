@@ -19,7 +19,7 @@
             android:visibility="invisible"
             app:layout_constraintStart_toStartOf="@+id/ldlot"
             app:layout_constraintTop_toTopOf="@+id/textView"
-            app:srcCompat="@drawable/imglotd" />
+            app:srcCompat="@drawable/peclot" />
 
         <TextView
             android:id="@+id/textView"
@@ -47,7 +47,7 @@
             android:id="@+id/ldlot"
             android:layout_width="0dp"
             android:layout_height="548dp"
-            android:background="@drawable/imglotd"
+            android:background="@drawable/peclot"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
