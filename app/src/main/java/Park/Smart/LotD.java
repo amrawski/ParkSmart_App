@@ -87,24 +87,31 @@ private View a;
             public void onResponse(JSONObject response) {
 
                 try {
-                    JSONArray spaces = response.getJSONArray("Lot_D");
-
                     Group group = findViewById(R.id.ldGroup);//bind view from xml
                     int[] lotGroup = group.getReferencedIds();
                     int arrLength = lotGroup.length;
+
+                    //set all the spots to unknown
                     for(int i=0; i < arrLength; i++){
 
                         int viewId = lotGroup[i];
                         spot = findViewById(viewId);
-
                         spot.setBackgroundColor(getResources().getColor(R.color.unknownspot));
                     }
 
+                    //this will trigger the catch statement if there is no data received.
+                    //it still works fine, this means that no updates are needed
+                    JSONArray spaces = response.getJSONArray("Lot_D");
+
+                    //iterate through response and update values.
                     for(int i=0; i < spaces.length(); i++) {
                         JSONObject space = spaces.getJSONObject(i);
-                        spot = findViewById(space.getInt("Space"));
+                        
+                        //get the spot to update from the "Space" field of the response
+                        spot = findViewById(lotGroup[space.getInt("Space")]);
 
-                        if (space.getBoolean("IsOccupied")) {
+                        //Color based off of the "IsOccupied" field of the response
+                        if (space.getInt("IsOccupied") == 1) {
                             spot.setBackgroundColor(getResources().getColor(R.color.takenspot));
                         }
                         else {
