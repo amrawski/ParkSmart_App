@@ -19,7 +19,7 @@
             android:visibility="invisible"
             app:layout_constraintStart_toStartOf="@+id/ldlot"
             app:layout_constraintTop_toTopOf="@+id/textView"
-            app:srcCompat="@drawable/imglotd" />
+            app:srcCompat="@drawable/peclot" />
 
         <TextView
             android:id="@+id/textView"
@@ -47,7 +47,7 @@
             android:id="@+id/ldlot"
             android:layout_width="0dp"
             android:layout_height="548dp"
-            android:background="@drawable/imglotd"
+            android:background="@drawable/peclot"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
                 android:id="@+id/ldGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:constraint_referenced_ids="ld30,ld35,ld73,ld51,ld18,ld36,ld48,ld07,ld54,ld72,ld01,ld57,ld61,ld37,ld26,ld16,ld71,ld13,ld22,ld04,ld46,ld49,ld67,ld17,ld32,ld34,ld03,ld70,ld05,ld38,ld25,ld60,ld29,ld56,ld64,ld21,ld27,ld31,ld09,ld40,ld42,ld24,ld45,ld50,ld33,ld62,ld02,ld14,ld28,ld53,ld68,ld55,ld43,ld11,ld65,ld19,ld15,ld12,ld58,ld08,ld41,ld20,ld59,ld52,ld47,ld69,ld10,ld44,ld66,ld23,ld06,ld39,ld63" />
+                app:constraint_referenced_ids="ld01,ld02,ld03,ld04,ld05,ld06,ld07,ld08,ld09,ld10,ld11,ld12,ld13,ld14,ld15,ld16,ld17,ld18,ld20,ld22,ld24,ld26,ld28,ld30,ld32,ld34,ld36,ld38,ld40,ld42,ld44,ld19,ld21,ld23,ld25,ld27,ld29,ld31,ld33,ld35,ld37,ld39,ld41,ld43,ld45,ld45,ld47,ld49,ld51,ld53,ld55,ld57,ld59,ld61,ld63,ld65,ld67,ld69,ld71,ld46,ld48,ld50,ld52,ld54,ld56,ld58,ld60,ld62,ld64,ld66,ld68,ld70,ld72,ld84,ld83,ld82,ld81,ld80,ld79,ld78,ld77,ld76,ld75,ld74" />
 
             <TextView
                 android:id="@+id/ld01"
@@ -1187,21 +1187,6 @@
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.952" />
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:indeterminate="true"
-            android:max="100"
-            android:progress="50"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.151"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.146" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,5 @@
     <color name="openspot">#388E3C</color>
     <color name="darkgrey">#2C3E50</color>
     <color name="white">#fff</color>
+    <color name="unknownspot">#FFFF00</color>
 </resources>

@@ -10,6 +10,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.Group;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,21 +81,78 @@ private View a;
 
     public void spotFilled(){
 
-        try {
-            Group group = findViewById(R.id.ldGroup);//bind view from xml
-            int[] lotGroup = group.getReferencedIds();
-            int arrLength = lotGroup.length;
-            for(int i=0; i<arrLength; i++){
-                int viewId = lotGroup[i];
-                spot = findViewById(viewId);
-                spot.setBackgroundColor(getResources().getColor(R.color.takenspot));
+        ParkSmartServer server = new ParkSmartServer(this);
+        server.pull("Lot_D", new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+
+                try {
+                    Group group = findViewById(R.id.ldGroup);//bind view from xml
+                    int[] lotGroup = group.getReferencedIds();
+                    int arrLength = lotGroup.length;
+
+                    //set all the spots to unknown
+                    for(int i=0; i < arrLength; i++){
+
+                        int viewId = lotGroup[i];
+                        spot = findViewById(viewId);
+                        spot.setBackgroundColor(getResources().getColor(R.color.unknownspot));
+                    }
+
+                    //this will trigger the catch statement if there is no data received.
+                    //it still works fine, this means that no updates are needed
+                    JSONArray spaces = response.getJSONArray("Lot_D");
+
+                    //iterate through response and update values.
+                    for(int i=0; i < spaces.length(); i++) {
+                        JSONObject space = spaces.getJSONObject(i);
+                        
+                        //get the spot to update from the "Space" field of the response
+                        spot = findViewById(lotGroup[space.getInt("Space")]);
+
+                        //Color based off of the "IsOccupied" field of the response
+                        if (space.getInt("IsOccupied") == 1) {
+                            spot.setBackgroundColor(getResources().getColor(R.color.takenspot));
+                        }
+                        else {
+                            spot.setBackgroundColor(getResources().getColor(R.color.openspot));
+                        }
+                    }
+                } catch (Exception e) {
+
+                    e.printStackTrace();
+
+                }
             }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                String output = "(java) HTTP request encountered Error: " + error.getMessage();
+                /* PUT CODE HERE FOR IF THE HTTP REQUEST FAILS
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                *
+                */
+            }
+        });
 
-        } catch (Exception e) {
 
-            e.printStackTrace();
 
-        }
+
     }
         public void spotOpen(){
 
