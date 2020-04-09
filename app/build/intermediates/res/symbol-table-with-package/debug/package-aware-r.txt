@@ -1388,6 +1388,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_lot_d
+layout activity_lot_dtest
 layout activity_lot_number1_
 layout activity_main
 layout design_bottom_navigation_item
